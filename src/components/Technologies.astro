@@ -1,0 +1,254 @@
+---
+import ReactIcon from "./icons/React.astro";
+import TailwindIcon from "./icons/Tailwind.astro";
+import GitHubIcon from "./icons/GitHub.astro";
+import CSharpIcon from "./icons/CSharp.astro";
+import JsonIcon from "./icons/JSON.astro";
+import HTML5Icon from "./icons/HTML5.astro";
+import CSSIcon from "./icons/CSS.astro";
+import ReactRouterIcon from "./icons/ReactRouter.astro";
+import MySQLIcon from "./icons/MySQL.astro";
+import JWTIcon from "./icons/JWT.astro";
+import SwaggerIcon from "./icons/Swagger.astro";
+import MongoDBicon from "./icons/MongoDB.astro";
+import PHPicon from "./icons/PHP.astro";
+import JSIcon from "./icons/JavaScript.astro";
+import AstroIcon from "./icons/AstroIcon.astro";
+import AzureIcon from "./icons/Azure.astro";
+import BootstrapIcon from "./icons/Bootstrap.astro";
+import FirebaseIcon from "./icons/FireBase.astro";
+import GitIcon from "./icons/Git.astro";
+import NodeJsIcon from "./icons/NodeJS.astro";
+import AngularIcon from "./icons/Angular.astro";
+import PostmanIcon from "./icons/Postman.astro";
+import SQLServerIcon from "./icons/SQLServer.astro";
+import VSIcon from "./icons/VisualStudio.astro";
+import VSCIcon from "./icons/VisualStudioCode.astro";
+import TypeScriptIcon from "./icons/TypeScript.astro";
+
+const TECH = {
+  REACT: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: ReactIcon,
+    name: "ReactJS",
+  },
+  TAILWIND: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: TailwindIcon,
+    name: "Tailwind CSS",
+  },
+  CSHARP: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: CSharpIcon,
+    name: "C#",
+  },
+  JSON: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: JsonIcon,
+    name: "JSON",
+  },
+  HTML5: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: HTML5Icon,
+    name: "HTML5",
+  },
+  CSS: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: CSSIcon,
+    name: "CSS3",
+  },
+  REACTROUTER: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: ReactRouterIcon,
+    name: "React-Router",
+  },
+  MySQL: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: MySQLIcon,
+    name: "MySQL",
+  },
+  JWT: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: JWTIcon,
+    name: "JWT",
+  },
+  SWAGGER: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: SwaggerIcon,
+    name: "Swagger",
+  },
+  MONGODB: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse -mr-2",
+    icon: MongoDBicon,
+    name: "MongoDB",
+  },
+  PHP: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: PHPicon,
+    name: "PHP",
+  },
+  JAVASCRIPT: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse -mr-3",
+    icon: JSIcon,
+    name: "JavaScript",
+  },
+  ANGULAR: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: AngularIcon,
+    name: "Angular",
+  },
+  ASTRO: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: AstroIcon,
+    name: "Astro",
+  },
+  AZURE: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: AzureIcon,
+    name: "Azure DevOps",
+  },
+  BOOTSTRAP: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: BootstrapIcon,
+    name: "Bootstrap",
+  },
+  FIREBASE: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: FirebaseIcon,
+    name: "Firebase",
+  },
+  GIT: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: GitIcon,
+    name: "Git",
+  },
+  NODEJS: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: NodeJsIcon,
+    name: "NodeJS",
+  },
+  POSTMAN: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: PostmanIcon,
+    name: "Postman",
+  },
+  SQLSERVER: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: SQLServerIcon,
+    name: "SQLServer",
+  },
+  TYPESCRIPT: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: TypeScriptIcon,
+    name: "TypeScript",
+  },
+  VISUALSTUDIO: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: VSIcon,
+    name: "VisualStudio",
+  },
+  VISUALSTUDIOCODE: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: VSCIcon,
+    name: "VisualStudioCode",
+  },
+  GITHUB: {
+    class:
+      "w-8 h-8 mb-2 hover:brightness-200 transition duration-300 animate-pulse",
+    icon: GitHubIcon,
+    name: "GitHub",
+  },
+};
+
+const SKILLS = [
+  {
+    title: "FrontEnd",
+    tech: [
+      TECH.HTML5,
+      TECH.CSS,
+      TECH.JAVASCRIPT,
+      TECH.REACT,
+      TECH.REACTROUTER,
+      TECH.BOOTSTRAP,
+      TECH.TAILWIND,
+    ],
+  },
+  {
+    title: "BackEnd",
+    tech: [
+      TECH.CSHARP,
+      TECH.MONGODB,
+      TECH.FIREBASE,
+      TECH.MySQL,
+      TECH.JSON,      
+      TECH.SQLSERVER,
+      TECH.JWT,
+      TECH.NODEJS,
+    ],
+  },
+  {
+    title: "Herramientas",
+    tech: [
+      TECH.GIT,
+      TECH.GITHUB,
+      TECH.VISUALSTUDIO,
+      TECH.VISUALSTUDIOCODE,
+      TECH.POSTMAN,
+      TECH.SWAGGER,
+    ],
+  },
+  {
+    title: "Aprendiendo",
+    tech: [TECH.TYPESCRIPT, TECH.AZURE, TECH.PHP, TECH.ANGULAR, TECH.ASTRO],
+  },
+];
+---
+
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+  {
+    SKILLS.map(({ title, tech }) => (
+      <div class="max-w-sm p-6  border border-gray-300/20 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <h5 class="mb-8 text-2xl font-bold tracking-tight text-yellow-200/80 dark:text-white text-center">
+          {title}
+        </h5>
+        <ul class="grid grid-cols-3 gap-4 mb-4">
+          {tech.map((tech) => (
+            <li class="flex flex-col items-center text-center">
+              <span class={`items-center ${tech.class}`}>
+                <tech.icon class="w-8 h-8" />
+              </span>
+              <span class="text-white/70 text-center mt-2 text-xs">
+                {tech.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))
+  }
+</div>

@@ -1,0 +1,202 @@
+---
+import ReactIcon from "./icons/React.astro";
+import TailwindIcon from "./icons/Tailwind.astro";
+import GitHubIcon from "./icons/GitHub.astro";
+import CSharpIcon from "./icons/CSharp.astro";
+import JsonIcon from "./icons/JSON.astro";
+import HTML5Icon from "./icons/HTML5.astro";
+import CSSIcon from "./icons/CSS.astro";
+import ReactRouterIcon from "./icons/ReactRouter.astro";
+import MySQLIcon from "./icons/MySQL.astro";
+import JWTIcon from "./icons/JWT.astro";
+import SwaggerIcon from "./icons/Swagger.astro";
+import MongoDBicon from "./icons/MongoDB.astro";
+import PHPicon from "./icons/PHP.astro";
+
+const TAGS = {
+  REACT: {
+    name: "React.js",
+    class: "bg-black text-white",
+    icon: ReactIcon,
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-[#003159] text-white",
+    icon: TailwindIcon,
+  },
+  CSHARP: {
+    name: "C#",
+    class: "bg-black text-white",
+    icon: CSharpIcon,
+  },
+  JSON: {
+    name: "JSON",
+    class: "bg-[#003159] text-white",
+    icon: JsonIcon,
+  },
+  HTML5: {
+    name: "HTML5",
+    class: "bg-black text-white",
+    icon: HTML5Icon,
+  },
+  CSS: {
+    name: "CSS3",
+    class: "bg-[#003159] text-white",
+    icon: CSSIcon,
+  },
+  REACTROUTER: {
+    name: "React-Router",
+    class: "bg-black text-white",
+    icon: ReactRouterIcon,
+  },
+  MySQL: {
+    name: "MySQL",
+    class: "bg-[#003159] text-white",
+    icon: MySQLIcon,
+  },
+  JWT: {
+    name: "JWT",
+    class: "bg-black text-white",
+    icon: JWTIcon,
+  },
+  SWAGGER: {
+    name: "Swagger",
+    class: "bg-[#003159] text-white",
+    icon: SwaggerIcon,
+  },
+  MONGODB: {
+    name: "MongoDB",
+    class: "bg-[#003159] text-white",
+    icon: MongoDBicon,
+  },
+  PHP: {
+    name: "PHP",
+    class: "bg-black text-white",
+    icon: PHPicon,
+  },
+};
+
+const PROJECTS = [
+  {
+    title: "Mundo Gluck - Pausas Activas",
+    description:
+      "Aplicación de gestión de actividades para la empresa Mundo Gluck que permite a los usuarios administrar, editar, eliminar y visualizar actividades vinculadas a módulos y usuarios. Incluye funcionalidades para cargar y descargar archivos, así como enlaces a actividades externas. El backend está desarrollado en C# con Entity Framework Core, mientras que el frontend se desarrolla con una interfaz moderna y responsive. Además, cuenta con autenticación y autorización, adaptándose a los roles de los usuarios para la gestión dinámica de actividades y módulos.",
+    link: "https://github.com/mendoall/PausasActivas",
+    github: "https://github.com/mendoall/PausasActivas",
+    image: "/projects/pausas-activas.webp",
+    tags: [
+      TAGS.CSHARP,
+      TAGS.MySQL,
+      TAGS.REACTROUTER,
+      TAGS.REACT,
+      TAGS.TAILWIND,
+      TAGS.JWT,
+      TAGS.SWAGGER,
+    ],
+  },
+  {
+    title: "Proyecto Condominios",
+    description:
+      "Aplicación desarrollada en C# MVC para la gestión integral de condominios. Facilita la administración de proyectos habitacionales, condóminos, visitas, y oficiales de seguridad. Los condóminos pueden registrar visitas, gestionar vehículos y generar un EasyPass QR para accesos rápidos. Los oficiales de seguridad verifican registros en tiempo real, asegurando un control eficiente y seguro en las entradas. Ideal para optimizar procesos en proyectos residenciales modernos.",
+    link: "https://github.com/mendoall/ProyectoCondominiosAM",
+    github: "https://github.com/mendoall/ProyectoCondominiosAM",
+    image: "/projects/condominios.webp",
+    tags: [TAGS.CSHARP],
+  },
+  {
+    title: "Poke - API",
+    description:
+      "Interfaz ASP.NET Core MVC que consume datos de la PokéAPI para obtener información detallada de los primeros 151 Pokémon. Al cargar la página principal, realiza una solicitud inicial para obtener una lista de Pokémon, seguida de solicitudes individuales para obtener detalles específicos de cada uno. La información de cada Pokémon se procesa y se muestra en la vista, permitiendo a los usuarios ver un listado completo con detalles relevantes como nombre e identificación de cada Pokémon.",
+    link: "https://github.com/mendoall/PokeApi",
+    github: "https://github.com/mendoall/PokeApi",
+    image: "/projects/pokeapi3.webp",
+    tags: [TAGS.CSHARP, TAGS.JSON],
+  },
+  {
+    title: "Mongo Back-End",
+    description:
+      "Aplicación web desarrollada con ASP.NET Core y MongoDB como base de datos NoSQL. Utiliza el patrón MVC para el gestionamiento, permitiendo realizar operaciones de crear, leer, actualizar y eliminar usuarios. Los datos se almacenan en MongoDB y se gestionan a través de la clase Database, que maneja la conexión y las operaciones CRUD. La aplicación proporciona una interfaz sencilla para administrar los usuarios y sus datos.",
+    link: "https://github.com/mendoall/MongoCRUD",
+    github: "https://github.com/mendoall/MongoCRUD",
+    image: "/projects/mongobe.webp",
+    tags: [TAGS.CSHARP, TAGS.MONGODB],
+  },
+  {
+    title: "Freelance - WEB SITE",
+    description:
+      "Página web estática para un diseñador freelance, muestra sus servicios en diseño web, aplicaciones web y e-commerce. Incluye secciones de bienvenida, servicios, y un formulario de contacto. Desarrollada en HTML5 y CSS3, utiliza Google Fonts y SVGs para un diseño visual atractivo y responsivo.",
+    link: "https://github.com/mendoall/FreelancerFrontEnd",
+    github: "https://github.com/mendoall/FreelancerFrontEnd",
+    image: "/projects/freelancer.webp",
+    tags: [TAGS.HTML5, TAGS.CSS],
+  },
+  {
+    title: "Glam MakeUp-Estética",
+    description:
+      "Página web estática que promociona servicios y productos de belleza, permite agendar citas y conecta con redes sociales. Desarrollada con HTML para la estructura, CSS para el diseño visual, y PHP para el manejo del formulario de citas, la página utiliza recursos multimedia para enriquecer la experiencia del usuario.",
+    link: "https://github.com/mendoall/GlamFrontEnd",
+    github: "https://github.com/mendoall/GlamFrontEnd",
+    image: "/projects/glam.webp",
+    tags: [TAGS.HTML5, TAGS.CSS, TAGS.PHP],
+  },
+];
+---
+
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+  {
+    PROJECTS.map(({ image, title, description, tags, link }) => (
+      <div class="max-w-sm bg-white/80 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-1">
+        <img
+          class="rounded-t-lg overflow-hidden bg-white bg-fixed transition duration-300 ease-in-out hover:opacity-80"
+          src={image}
+          alt={`Captura de pantalla del proyecto ${title}`}
+        />
+        <div class="p-5">
+          <div>
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              {title}
+            </h5>
+          </div>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-sm">
+            {description}
+          </p>
+          <ul class="flex gap-x-2 gap-y-2 flex-wrap mb-4">
+            {tags.map((tag) => (
+              <li>
+                <span
+                  class={`flex items-center gap-1 rounded-full text-sm ${tag.class} py-1 px-2`}
+                >
+                  <tag.icon class="w-4 h-4" />
+                  {tag.name}
+                </span>
+              </li>
+            ))}
+          </ul>
+          <a
+            href={link}
+            target="_blank"
+            class="rounded-full border border-white/40 flex justify-center items-center gap-x-2 py-1 px-2 lg:py-2 lg:px-2 text-xs lg:text-sm bg-[#131622] hover:scale-110 hover:bg-[#020617] transition"
+          >
+            <GitHubIcon class="size-4 lg:size-6" />
+            Ver Proyecto
+            <svg
+              class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    ))
+  }
+</div>

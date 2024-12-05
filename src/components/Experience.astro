@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    date: "Mayo 2024 - Septiembre 2024",
+    title: "Práctica como Desarrollador Junior ",
+    company: "Simetría Digital ",
+    description:
+      "Evaluación y análisis de soluciones para responder a las necesidades de los clientes, desarrollo y mantenimiento de APIs y aplicaciones web, diseño e implementación de aplicaciones full-stack (Front-End y Back-End) y realización de tareas en sprints ágiles.",
+  },
+  {
+    date: "Marzo 2023 - Febrero 2024",
+    title: "Spanish Interpreter",
+    company: "Language Line Solutions ",
+    description:
+      "Responsable de escuchar, comprender e interpretar lo que se comunica durante la conversación. Capacidad de interpretación escrita y verbal.",
+  },
+  {
+    date: "Junio 20117 - Septiembre 2022",
+    title: "Amazon Associate" ,
+    company: "Amazon",
+    description:
+      "Durante mi paso por la compañía tuve la oportunidad de desempeñar diferentes roles como agente de servicio al cliente, mentor, líder de equipo, y realicé cambios en diferentes departamentos culminando así mi paso en el departamento de Amazon Alexa.",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="ml-3 mb-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
